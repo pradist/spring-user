@@ -9,9 +9,9 @@ public class MockUserDataSource implements UserDataSource {
   @Override
   public List<User> getAll() {
     return List.of(
-      new User(1, "James", "Bond", ""),
-      new User(2, "Maria", "Jones", ""),
-      new User(3, "Anna", "Smith", "")
+      new User(1, "James", "Bond", "james@mail.com"),
+      new User(2, "Maria", "Jones", "maria@mail.com"),
+      new User(3, "Anna", "Smith", "anna@mail.com")
       );
   }
 }
