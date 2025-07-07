@@ -1,5 +1,5 @@
 #!/bin/bash
 
-echo "hello"
+mvn clean test
 
 exit 0
