@@ -23,3 +23,10 @@ repos:
       - id: maven
         args: ["clean compile"]
 #      - id: maven-test
+
+  - repo: local
+    hooks:
+      - id: unit-test
+        name: unit-test
+        entry: bash hello.sh
+        language: system
