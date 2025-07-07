@@ -14,7 +14,7 @@ public class MockUserDataSourceTest {
     List<User> users = mockUser.getAll();
 
     assertThat(users).isNotEmpty();
-    assertThat(users).hasSize(4);
+    assertThat(users).hasSize(3);
   }
 
   @Test
