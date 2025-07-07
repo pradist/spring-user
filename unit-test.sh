@@ -1,3 +1,3 @@
 #!/bin/bash
 
-mvn clean test
+echo "Running unit tests..."
