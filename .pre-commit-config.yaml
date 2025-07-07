@@ -28,5 +28,5 @@ repos:
     hooks:
       - id: unit-test
         name: unit-test
-        entry: bash hello.sh
+        entry: bash unit-test.sh
         language: system
