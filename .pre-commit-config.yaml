@@ -22,7 +22,6 @@ repos:
     hooks:
       - id: maven
         args: ["clean compile"]
-#      - id: maven-test
 
   - repo: local
     hooks:
