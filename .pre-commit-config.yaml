@@ -30,3 +30,4 @@ repos:
         name: unit-test
         entry: bash unit-test.sh
         language: system
+        verbose: true
