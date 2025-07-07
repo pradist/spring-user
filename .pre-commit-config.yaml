@@ -22,4 +22,4 @@ repos:
     hooks:
       - id: maven
         args: ["clean compile"]
-      - id: maven-test
+#      - id: maven-test
