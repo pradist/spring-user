@@ -9,15 +9,6 @@ import org.junit.jupiter.api.Test;
 public class MockUserDataSourceTest {
 
   @Test
-  public void WhenCallUser_GetAll_ShouldReturnUsers() {
-    MockUserDataSource mockUser = new MockUserDataSource();
-    List<User> users = mockUser.getAll();
-
-    assertThat(users).isNotEmpty();
-    assertThat(users).hasSize(3);
-  }
-
-  @Test
   public void WhenCallUser_GetAll_shouldProvideSomeMockData() {
     MockUserDataSource mockUserDataSource = new MockUserDataSource();
     List<User> users = mockUserDataSource.getAll();
@@ -28,5 +19,14 @@ public class MockUserDataSourceTest {
         .allMatch(user -> !user.getFirstName().isEmpty())
         .allMatch(user -> !user.getLastName().isEmpty())
         .allMatch(user -> !user.getEmail().isEmpty());
+  }
+
+  @Test
+  public void WhenCallUser_GetAll_ShouldReturnUsers() {
+    MockUserDataSource mockUser = new MockUserDataSource();
+    List<User> users = mockUser.getAll();
+
+    assertThat(users).isNotEmpty();
+    assertThat(users).hasSize(3);
   }
 }
