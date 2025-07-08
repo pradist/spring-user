@@ -22,3 +22,11 @@ repos:
     hooks:
       - id: maven
         args: ["clean compile"]
+
+  - repo: local
+    hooks:
+      - id: unit-test
+        name: unit-test
+        entry: bash unit-test.sh
+        language: system
+        verbose: true
