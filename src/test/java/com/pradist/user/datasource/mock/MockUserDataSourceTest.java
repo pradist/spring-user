@@ -28,5 +28,6 @@ public class MockUserDataSourceTest {
 
     assertThat(users).isNotEmpty();
     assertThat(users).hasSize(3);
+    assertThat(users.get(0).getId()).isEqualTo(1);
   }
 }
